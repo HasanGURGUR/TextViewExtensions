@@ -3,10 +3,7 @@ package hasan.gurgur.textviewextensionsexample
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import hasan.gurgur.textviewextensionsexample.databinding.ActivityMainBinding
-import hasan.gurgur.textviewextensionsexample.extensions.setBoldSubstring
-import hasan.gurgur.textviewextensionsexample.extensions.setColorOfSubstring
-import hasan.gurgur.textviewextensionsexample.extensions.setDrawableLeft
-import hasan.gurgur.textviewextensionsexample.extensions.underLine
+import hasan.gurgur.textviewextensionsexample.extensions.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.tv1.setDrawableLeft(R.drawable.ic_music)
         binding.tv1.setBoldSubstring("Hello")
+
+        binding.tv2.deleteLine()
 
 
     }

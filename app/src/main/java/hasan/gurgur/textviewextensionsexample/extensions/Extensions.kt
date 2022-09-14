@@ -62,3 +62,8 @@ fun TextView.setBoldSubstring(substring: String){
 
 }
 
+fun TextView.deleteLine() {
+    paint.flags = paint.flags or Paint.STRIKE_THRU_TEXT_FLAG
+    paint.isAntiAlias = true
+}
+
